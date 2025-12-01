@@ -1,0 +1,85 @@
+/* client/src/App.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f7fb;
+  font-family: Inter, Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.card {
+  width: 720px;
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 8px 28px rgba(20, 30, 60, 0.08);
+  margin-top: 30px;
+}
+
+h1 {
+  margin: 0 0 14px 0;
+  font-size: 22px;
+}
+
+.upload {
+  cursor: pointer;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.upload-placeholder {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #dce7ff;
+    border-radius: 8px;
+    color: #334;
+    background: linear-gradient(180deg, #fbfdff, #f6f9ff);
+}
+
+.preview-img {
+  max-height: 420px;
+  width: 100%;
+  object-fit: contain;
+  background: #fafafa;
+}
+
+.controls {
+  margin-top: 12px;
+}
+button {
+  padding: 10px 16px;
+  border: none;
+  background: #2f63ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 16px;
+}
+
+.text-output {
+  white-space: pre-wrap;
+  background: #f7f8fc;
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 120px;
+  max-height: 360px;
+  overflow: auto;
+}
